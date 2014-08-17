@@ -1,8 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="housewarmingApp">
 	<head>
 		<title>Housewarming</title>
+
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+		<script type="text/javascript" src="/libs/angularjs/1.2.22/angular-route.min.js"></script>
+
+		<script type="text/javascript" src="/app/app.js"></script>
+		<script type="text/javascript" src="/app/controllers/homeController.js"></script>
 	</head>
 	<body>
-		<p>Choose a tasty cocktail.</p>
+		<div ng-view></div>
 	</body>
 </html>
