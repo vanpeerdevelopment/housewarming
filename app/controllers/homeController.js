@@ -1,3 +1,3 @@
-app.controller('HomeController', function($scope){
-	$scope.message = 'Choose your tasty cocktail.';
+app.controller('HomeController', function($scope, cocktailService){
+	$scope.cocktails = cocktailService.getCocktails();
 });
