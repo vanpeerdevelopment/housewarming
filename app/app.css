@@ -3,6 +3,7 @@
 }
 
 .jumbotron{
+	background-color: inherit;
 	background-image: url("/images/banner.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
