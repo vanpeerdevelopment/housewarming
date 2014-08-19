@@ -1,3 +1,3 @@
 app.controller('HomeController', function($scope, cocktailService){
-	$scope.cocktails = cocktailService.getCocktails();
+	$scope.cocktails = cocktailService.getAllCocktails();
 });
