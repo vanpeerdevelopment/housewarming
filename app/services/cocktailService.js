@@ -3,27 +3,27 @@ app.factory('cocktailService', function() {
 		id: 1,
 		number: 6,
 		name: "Caprioska",
-		keyIngredient:"Wodka"
+		keyIngredient: "Wodka"
 	}, {
 		id: 2,
 		number: 9,
 		name: "Wodka Martini",
-		keyIngredient:"Wodka"
+		keyIngredient: "Wodka"
 	}, {
 		id: 3,
 		number: 23,
 		name: "Cosmopolitan",
-		keyIngredient:"Wodka"
+		keyIngredient: "Wodka"
 	}, {
 		id: 4,
 		number: 29,
 		name: "Capuccino Cocktail",
-		keyIngredient:"Wodka"
+		keyIngredient: "Wodka"
 	}, {
 		id: 5,
 		number: 40,
 		name: "Long Island Iced Tea",
-		keyIngredient:"Wodka"
+		keyIngredient: "Wodka"
 	}, {
 		id: 6,
 		number: 50,
@@ -146,9 +146,21 @@ app.factory('cocktailService', function() {
 		keyIngredient: "Cava"
 	}];
 
+	var keyIngredientCocktailMap = function() {
+		var result = {};
+		cocktails.forEach(function(cocktail) {
+			if (result[cocktail.keyIngredient]) {
+				result[cocktail.keyIngredient].push(cocktail);
+			} else {
+				result[cocktail.keyIngredient] = [cocktail];
+			}
+		});
+		return result;
+	};
+
 	return {
-		getAllCocktails: function() {
-			return cocktails;
+		keyIngredients: function() {
+			return Object.keys(keyIngredientCocktailMap());
 		}
 	};
 });
