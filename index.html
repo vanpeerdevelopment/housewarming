@@ -17,13 +17,14 @@
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
 		<script type="text/javascript" src="/libs/angularjs/1.2.22/angular-route.min.js"></script>
 
+		<link rel="stylesheet" type="text/css" href="/app/app.css">
 		<script type="text/javascript" src="/app/app.js"></script>
 		<script type="text/javascript" src="/app/controllers/homeController.js"></script>
 		<script type="text/javascript" src="/app/services/cocktailService.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-			<div class="container">
+		<nav id="navbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container-fluid">
 				<div class="navbar-header">
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapsable-content">
 						<span class="sr-only">Toggle navigation</span>
@@ -37,6 +38,12 @@
 				</div>
 			</div>
 		</nav>
+		<div id="banner" class="jumbotron">
+			<div class="container-fluid">
+				<h1>Enjoy the cocktails</h1>
+				<p>Hieronder vind je een overzichtje van alle cocktails die geserveerd worden.</p>
+			</div>
+		</div>
 
 		<div ng-view></div>
 	</body>
