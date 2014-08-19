@@ -110,21 +110,6 @@ app.factory('cocktailService', function() {
 		name: "Brandy Daisy",
 		keyIngredient: "Cognac"
 	}, {
-		id: 23,
-		number: 310,
-		name: "Hazel Cream",
-		keyIngredient: "Andere"
-	}, {
-		id: 24,
-		number: 316,
-		name: "Bushwacker",
-		keyIngredient: "Andere"
-	}, {
-		id: 25,
-		number: 324,
-		name: "Toasted Almond",
-		keyIngredient: "Andere"
-	}, {
 		id: 26,
 		number: 341,
 		name: "Pippin Zoë",
@@ -144,6 +129,21 @@ app.factory('cocktailService', function() {
 		number: 351,
 		name: "Pick Me Up",
 		keyIngredient: "Cava"
+	}, {
+		id: 23,
+		number: 310,
+		name: "Hazel Cream",
+		keyIngredient: "Andere"
+	}, {
+		id: 24,
+		number: 316,
+		name: "Bushwacker",
+		keyIngredient: "Andere"
+	}, {
+		id: 25,
+		number: 324,
+		name: "Toasted Almond",
+		keyIngredient: "Andere"
 	}];
 
 	var keyIngredientCocktailMap = function() {
@@ -156,11 +156,9 @@ app.factory('cocktailService', function() {
 			}
 		});
 		return result;
-	};
+	}();
 
 	return {
-		keyIngredients: function() {
-			return Object.keys(keyIngredientCocktailMap());
-		}
+		keyIngredientCocktailMap: keyIngredientCocktailMap
 	};
 });
