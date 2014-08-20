@@ -1,5 +1,13 @@
 <div class="row">
 	<div class="col-md-12">
-		<h3>{{keyIngredient}} - {{cocktails.length}}</h3>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h4 class="panel-title">{{keyIngredient}}</h4>
+			</div>
+			<div class="panel-body">
+				<p ng-if="cocktails.length === 1">Er is {{cocktails.length}} cocktail met {{keyIngredient | lowercase}} beschikbaar.</p>
+				<p ng-if="cocktails.length > 1">Er zijn {{cocktails.length}} cocktails met {{keyIngredient | lowercase}} beschikbaar.</p>
+			</div>
+		</div>
 	</div>
 </div>	
