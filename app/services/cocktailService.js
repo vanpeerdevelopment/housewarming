@@ -75,32 +75,38 @@ app.factory('cocktailService', function() {
 		id: 13,
 		number: 148,
 		name: "Raspberry Delight",
-		keyIngredient: "Rum"
+		keyIngredient: "Rum",
+		imageUrl: "/img/cocktails/raspberry-delight.jpg"
 	}, {
 		id: 14,
 		number: 157,
 		name: "Bacardi Cocktail",
-		keyIngredient: "Rum"
+		keyIngredient: "Rum",
+		imageUrl: "/img/cocktails/bacardi-cocktail.jpg"
 	}, {
 		id: 15,
 		number: 163,
 		name: "Rum Swizzle",
-		keyIngredient: "Rum"
+		keyIngredient: "Rum",
+		imageUrl: "/img/cocktails/rum-swizzle.jpg"
 	}, {
 		id: 16,
 		number: 164,
 		name: "Mojito",
-		keyIngredient: "Rum"
+		keyIngredient: "Rum",
+		imageUrl: "/img/cocktails/mojito.jpg"
 	}, {
 		id: 17,
 		number: 174,
 		name: "Caipirinha",
-		keyIngredient: "Rum"
+		keyIngredient: "Rum",
+		imageUrl: "/img/cocktails/caipirinha.jpg"
 	}, {
 		id: 18,
 		number: 184,
 		name: "Cuba Libre",
-		keyIngredient: "Rum"
+		keyIngredient: "Rum",
+		imageUrl: "/img/cocktails/cuba-libre.jpg"
 	}, {
 		id: 19,
 		number: 211,
