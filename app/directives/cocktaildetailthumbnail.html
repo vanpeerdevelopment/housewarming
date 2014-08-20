@@ -1,0 +1,12 @@
+<div class="thumbnail">
+	<img class="img-responsive img-rounded" ng-src="{{cocktail.imageUrl}}" alt="{{cocktail.name}}">
+	<div class="caption">
+		<h5>{{cocktail.name}}</h5>
+		<ul class="fa-ul">
+			<li><i class="fa-li fa fa-bookmark fa-fw"></i>Nummer: {{cocktail.number}}</li>
+			<li><i class="fa-li fa fa-cube fa-fw"></i>Basisingrediënt: {{cocktail.keyIngredient}}</li>
+			<li><i class="fa-li fa fa-bolt fa-fw"></i>Alcoholgehalte: <fivedotrating rating="cocktail.alcoholLevel"></fivedotrating></li>
+			<li><i class="fa-li fa fa-thumbs-o-up fa-fw"></i>Beoordeling: <fivestarrating rating="cocktail.rating"></fivestarrating></li>
+		</ul>
+		<a class="btn btn-primary btn-block" type="button" ng-href="#"><i class="fa fa-angle-double-left fa-fw"></i>Overzicht</a>
+</div>
