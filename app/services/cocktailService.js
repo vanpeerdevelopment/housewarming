@@ -3,27 +3,32 @@ app.factory('cocktailService', function() {
 		id: 1,
 		number: 6,
 		name: "Caprioska",
-		keyIngredient: "Wodka"
+		keyIngredient: "Wodka",
+		imageUrl: "/img/cocktails/caprioska.jpg"
 	}, {
 		id: 2,
 		number: 9,
 		name: "Wodka Martini",
-		keyIngredient: "Wodka"
+		keyIngredient: "Wodka",
+		imageUrl: "/img/cocktails/wodka-martini.jpg"
 	}, {
 		id: 3,
 		number: 23,
 		name: "Cosmopolitan",
-		keyIngredient: "Wodka"
+		keyIngredient: "Wodka",
+		imageUrl: "/img/cocktails/cosmopolitan.jpg"
 	}, {
 		id: 4,
 		number: 29,
-		name: "Capuccino Cocktail",
-		keyIngredient: "Wodka"
+		name: "Cappuccino Cocktail",
+		keyIngredient: "Wodka",
+		imageUrl: "/img/cocktails/cappuccino-cocktail.jpg"
 	}, {
 		id: 5,
 		number: 40,
 		name: "Long Island Iced Tea",
-		keyIngredient: "Wodka"
+		keyIngredient: "Wodka",
+		imageUrl: "/img/cocktails/long-island-iced-tea.jpg"
 	}, {
 		id: 6,
 		number: 50,
