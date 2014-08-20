@@ -33,27 +33,32 @@ app.factory('cocktailService', function() {
 		id: 6,
 		number: 50,
 		name: "Delmonico",
-		keyIngredient: "Gin"
+		keyIngredient: "Gin",
+		imageUrl: "/img/cocktails/delmonico.jpg"
 	}, {
 		id: 7,
 		number: 69,
 		name: "Parisian",
-		keyIngredient: "Gin"
+		keyIngredient: "Gin",
+		imageUrl: "/img/cocktails/parisian.jpg"
 	}, {
 		id: 8,
 		number: 77,
 		name: "Bronx",
-		keyIngredient: "Gin"
+		keyIngredient: "Gin",
+		imageUrl: "/img/cocktails/bronx.jpg"
 	}, {
 		id: 9,
 		number: 78,
 		name: "Cowboy 45",
-		keyIngredient: "Gin"
+		keyIngredient: "Gin",
+		imageUrl: "/img/cocktails/cowboy-45.jpg"
 	}, {
 		id: 10,
-		number: undefined,
+		number: "/",
 		name: "Gin Tonic",
-		keyIngredient: "Gin"
+		keyIngredient: "Gin",
+		imageUrl: "/img/cocktails/gin-tonic.jpg"
 	}, {
 		id: 11,
 		number: 119,
