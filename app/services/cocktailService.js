@@ -159,17 +159,20 @@ app.factory('cocktailService', function() {
 		id: 23,
 		number: 310,
 		name: "Hazel Cream",
-		keyIngredient: "Andere"
+		keyIngredient: "Andere",
+		imageUrl: "/img/cocktails/hazel-cream.jpg"
 	}, {
 		id: 24,
 		number: 316,
 		name: "Bushwacker",
-		keyIngredient: "Andere"
+		keyIngredient: "Andere",
+		imageUrl: "/img/cocktails/bushwacker.jpg"
 	}, {
 		id: 25,
 		number: 324,
 		name: "Toasted Almond",
-		keyIngredient: "Andere"
+		keyIngredient: "Andere",
+		imageUrl: "/img/cocktails/toasted-almond.jpg"
 	}];
 
 	var keyIngredientCocktailMap = function() {
