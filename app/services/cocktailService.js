@@ -111,22 +111,26 @@ app.factory('cocktailService', function() {
 		id: 19,
 		number: 211,
 		name: "Old-Fashioned",
-		keyIngredient: "Whiskey"
+		keyIngredient: "Whiskey",
+		imageUrl: "/img/cocktails/old-fashioned.jpg"
 	}, {
 		id: 20,
 		number: 224,
 		name: "Whiskey Sour",
-		keyIngredient: "Whiskey"
+		keyIngredient: "Whiskey",
+		imageUrl: "/img/cocktails/whiskey-sour.jpg"
 	}, {
 		id: 21,
 		number: 226,
 		name: "Manhattan",
-		keyIngredient: "Whiskey"
+		keyIngredient: "Whiskey",
+		imageUrl: "/img/cocktails/manhattan.jpg"
 	}, {
 		id: 22,
 		number: 262,
 		name: "Brandy Daisy",
-		keyIngredient: "Cognac"
+		keyIngredient: "Cognac",
+		imageUrl: "/img/cocktails/brandy-daisy.jpg"
 	}, {
 		id: 26,
 		number: 341,
