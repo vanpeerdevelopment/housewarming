@@ -135,22 +135,26 @@ app.factory('cocktailService', function() {
 		id: 26,
 		number: 341,
 		name: "Pippin Zoë",
-		keyIngredient: "Cava"
+		keyIngredient: "Cava",
+		imageUrl: "/img/cocktails/pippin-zoe.jpg"
 	}, {
 		id: 27,
 		number: 344,
 		name: "Kir Royale",
-		keyIngredient: "Cava"
+		keyIngredient: "Cava",
+		imageUrl: "/img/cocktails/kir-royale.jpg"
 	}, {
 		id: 28,
 		number: 345,
 		name: "Cava Classic",
-		keyIngredient: "Cava"
+		keyIngredient: "Cava",
+		imageUrl: "/img/cocktails/cava-classic.jpg"
 	}, {
 		id: 29,
 		number: 351,
 		name: "Pick Me Up",
-		keyIngredient: "Cava"
+		keyIngredient: "Cava",
+		imageUrl: "/img/cocktails/pick-me-up.jpg"
 	}, {
 		id: 23,
 		number: 310,
