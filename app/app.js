@@ -6,6 +6,15 @@ app.config(function($routeProvider) {
 			controller: 'HomeController',
 			templateUrl: '/app/partials/home.html'
 		})
+		.when('/cocktail/:name', {
+			controller: 'CocktailController',
+			templateUrl: '/app/partials/cocktail.html',
+			resolve: {
+				cocktail: function($route, cocktailService){
+					return cocktailService.findByName($route.current.params.name);
+				}
+			}
+		})
 		.otherwise({
 			redirectTo: '/'
 		});

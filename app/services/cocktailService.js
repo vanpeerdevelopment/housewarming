@@ -245,7 +245,17 @@ app.factory('cocktailService', function() {
 		return result;
 	}();
 
+	var withName = function(name){
+		return function(cocktail){
+			return cocktail.name === name;
+		}		
+	};
+
 	return {
-		keyIngredientCocktailMap: keyIngredientCocktailMap
+		keyIngredientCocktailMap: keyIngredientCocktailMap,
+		findByName: function(name){
+			return cocktails
+			.filter(withName(name))[0];
+		}
 	};
 });
