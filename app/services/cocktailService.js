@@ -5,7 +5,7 @@ app.factory('cocktailService', function() {
 		name: "Caprioska",
 		keyIngredient: "Wodka",
 		alcoholLevel: 2,
-		rating: 3.5,
+		rating: 4,
 		imageUrl: "/img/cocktails/caprioska.jpg"
 	}, {
 		id: 2,
