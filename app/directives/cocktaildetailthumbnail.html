@@ -8,5 +8,9 @@
 			<li><i class="fa-li fa fa-bolt fa-fw"></i>Alcoholgehalte: <fivedotrating rating="cocktail.alcoholLevel"></fivedotrating></li>
 			<li><i class="fa-li fa fa-thumbs-o-up fa-fw"></i>Beoordeling: <fivestarrating rating="cocktail.rating"></fivestarrating></li>
 		</ul>
-		<a class="btn btn-primary btn-block" type="button" ng-href="#"><i class="fa fa-angle-double-left fa-fw"></i>Overzicht</a>
+		<div class="btn-group btn-group-justified">
+			<a class="btn btn-primary" ng-class="{disabled: previous() === undefined}" type="button" ng-href="#/cocktail/{{previous().name}}"><i class="fa fa-angle-double-left fa-fw"></i>Vorige</a>
+			<a class="btn btn-primary" type="button" ng-href="#">Overzicht</a>
+			<a class="btn btn-primary" ng-class="{disabled: next() === undefined}" type="button" ng-href="#/cocktail/{{next().name}}">Volgende<i class="fa fa-angle-double-right fa-fw"></i></a>
+		</div>
 </div>

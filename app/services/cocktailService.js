@@ -256,6 +256,12 @@ app.factory('cocktailService', function() {
 		findByName: function(name){
 			return cocktails
 			.filter(withName(name))[0];
+		},
+		findPrevious: function(cocktail){
+			return cocktails[cocktails.indexOf(cocktail) - 1];
+		},
+		findNext: function(cocktail){
+			return cocktails[cocktails.indexOf(cocktail) + 1];
 		}
 	};
 });
