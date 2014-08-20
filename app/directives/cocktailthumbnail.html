@@ -2,9 +2,10 @@
 	<img class="img-responsive img-rounded" ng-src="{{cocktail.imageUrl}}" alt="{{cocktail.name}}">
 	<div class="caption">
 		<h5>{{cocktail.name}}</h5>
-		<ul>
-			<li>Id: {{cocktail.id}}</li>
-			<li>Number: {{cocktail.number}}</li>
+		<ul class="fa-ul">
+			<li><i class="fa-li fa fa-bookmark fa-fw"></i>Nummer: {{cocktail.number}}</li>
+			<li><i class="fa-li fa fa-bolt fa-fw"></i>Alcoholgehalte: {{cocktail.alcoholLevel}}/5</li>
+			<li><i class="fa-li fa fa-thumbs-o-up fa-fw"></i>Beoordeling: {{cocktail.rating}}/5</li>
 		</ul>
 	</div>
 </div>
