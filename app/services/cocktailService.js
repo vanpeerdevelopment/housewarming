@@ -63,12 +63,14 @@ app.factory('cocktailService', function() {
 		id: 11,
 		number: 119,
 		name: "Margarita",
-		keyIngredient: "Tequila"
+		keyIngredient: "Tequila",
+		imageUrl: "/img/cocktails/margarita.jpg"
 	}, {
 		id: 12,
 		number: 123,
 		name: "Tequila Manhattan",
-		keyIngredient: "Tequila"
+		keyIngredient: "Tequila",
+		imageUrl: "/img/cocktails/tequila-manhattan.jpg"
 	}, {
 		id: 13,
 		number: 148,
