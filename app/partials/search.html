@@ -1,3 +1,58 @@
 <div class="container">
-	<p>Search</p>
+	<div class="row">
+		<div class="col-md-12">
+			<fieldset>
+				<legend>Filter</legend>
+				<div class="row">
+					<div class="col-md-4">
+						<p>Sorteer op:</p>
+						<div class="radio">
+							<label>
+								<input type="radio" name="ordercriterium" id"nameradio" value="name" ng-model="orderCriterium" checked/>Naam
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="ordercriterium" id"numberradio" ng-model="orderCriterium" value="number"/>Nummer
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="ordercriterium" id"keyingredientradio" ng-model="orderCriterium" value="keyIngredient"/>Basisingrediënt
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="ordercriterium" id"alcohollevelradio" ng-model="orderCriterium" value="alcoholLevel"/>Alcoholgehalte
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="ordercriterium" id"ratingradio" ng-model="orderCriterium" value="rating"/>Beoordeling
+							</label>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<p>Zoek naar:</p>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-search"></i></span>
+							<input class="form-control" type="text" ng-model="searchText" placeholder="Search ..."/>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+	<div class="row">
+		<div class="btn-group">
+		</div>
+	</div>
+	<div class="row">
+		<div ng-repeat="cocktail in cocktails | filter: searchText | orderBy: orderCriterium">
+			<div class="col-md-4">
+				<cocktailoverviewthumbnail cocktail="cocktail"></cocktailoverviewthumbnail>
+			</div>
+			<div ng-if="($index + 1) % 3 === 0"  class="clearfix"></div>
+		</div>
+	</div>
 </div>

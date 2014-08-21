@@ -5,8 +5,11 @@
 	<div class="panel-body">
 		<div class="container-fluid">
 			<div class="row">
-				<div ng-repeat="cocktail in cocktails" class="col-md-4">
-					<cocktailoverviewthumbnail cocktail="cocktail"></cocktailoverviewthumbnail>
+				<div ng-repeat="cocktail in cocktails">
+					<div class="col-md-4">
+						<cocktailoverviewthumbnail cocktail="cocktail"></cocktailoverviewthumbnail>
+					</div>
+					<div ng-if="($index + 1) % 3 === 0"  class="clearfix"></div>
 				</div>
 			</div>
 		</div>

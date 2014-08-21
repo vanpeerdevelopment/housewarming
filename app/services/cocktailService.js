@@ -424,6 +424,7 @@ app.factory('cocktailService', function() {
 	};
 
 	return {
+		allCocktails: cocktails,
 		keyIngredientCocktailMap: keyIngredientCocktailMap,
 		findByName: function(name) {
 			return cocktails
