@@ -3,7 +3,8 @@ app.directive('cocktailpanel', function() {
 		restrict: 'E',
 		scope: {
 			keyIngredient: '=',
-			cocktails: '='
+			cocktails: '=',
+			order: '='
 		},
 		templateUrl: '/app/directives/cocktailpanel.html'
 	};

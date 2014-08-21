@@ -9,4 +9,8 @@ app.controller('CocktailController', function($scope, cocktail, cocktailService)
 	$scope.next = function(){
 		return cocktailService.findNext(cocktail);
 	};
+
+	$scope.orderCocktail = function(cocktail){
+		cocktailService.order(cocktail);
+	};	
 });

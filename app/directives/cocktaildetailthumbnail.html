@@ -33,4 +33,5 @@
 			<a class="btn btn-primary" type="button" ng-href="#">Overzicht</a>
 			<a class="btn btn-primary" ng-class="{disabled: next() === undefined}" type="button" ng-href="#/cocktail/{{next().name}}">Volgende<i class="fa fa-angle-double-right fa-fw"></i></a>
 		</div>
+		<button class="btn btn-primary btn-block" type="button" ng-click="order(cocktail)"><i class="fa fa-shopping-cart fa-fw"></i>Bestel</button>
 </div>

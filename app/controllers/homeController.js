@@ -7,4 +7,8 @@ app.controller('HomeController', function($scope, cocktailService) {
 	$scope.cocktailsForKeyIngredient = function(keyIngredient) {
 		return cocktailService.keyIngredientCocktailMap[keyIngredient];
 	};
+
+	$scope.orderCocktail = function(cocktail){
+		cocktailService.order(cocktail);
+	};
 });

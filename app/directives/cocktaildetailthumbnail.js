@@ -4,7 +4,8 @@ app.directive('cocktaildetailthumbnail', function() {
 		scope: {
 			cocktail: '=',
 			previous: '=',
-			next: '='
+			next: '=',
+			order: '='
 		},
 		templateUrl: '/app/directives/cocktaildetailthumbnail.html'
 	};

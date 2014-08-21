@@ -1,3 +1,31 @@
 <div class="container">
-	<p>{{message}}</p>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title"><i class="fa fa-shopping-cart fa-fw"></i>Bestelling</h4>
+		</div>
+		<div class="panel-body">
+			<p>De volgende cocktails werden besteld:</p>
+		</div>
+		<div class="responsive-table">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Naam</th>
+						<th>Aantal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="cocktail in orderedCocktails()">
+						<td><a ng-href="#/cocktail/{{cocktail.name}}">{{cocktail.number}}</a></td>
+						<td><a ng-href="#/cocktail/{{cocktail.name}}">{{cocktail.name}}</a></td>
+						<td>{{cocktail.timesOrdered}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="panel-body">		
+			<button ng-click="clearOrder()" type="button" class="btn btn-primary pull-right"><i class="fa fa-trash-o fa-fw"></i>Verwijder bestelling</button>
+		</div>
+	</div>
 </div>
