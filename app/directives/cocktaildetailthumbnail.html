@@ -31,7 +31,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 col-md-offset-4">
-					<button class="btn btn-primary btn-block col-md4" type="button" ng-click="order(cocktail)"><i class="fa fa-shopping-cart fa-fw"></i>Bestel</button>
+					<button class="btn btn-primary btn-block col-md4" type="button" ng-really-message= "Wil je een {{cocktail.name | lowercase}} bestellen?" ng-really-click="order(cocktail)"><i class="fa fa-shopping-cart fa-fw"></i>Bestel</button>
 				</div>
 			</div>
 			<div class="row">

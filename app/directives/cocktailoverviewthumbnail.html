@@ -11,7 +11,7 @@
 			<li><i class="fa-li fa fa-thumbs-o-up fa-fw"></i>Beoordeling: <fivestarrating rating="cocktail.rating"></fivestarrating></li>
 		</ul>
 		<div class="btn-group btn-group-justified">
-			<a class="btn btn-primary" type="button" ng-click="order(cocktail)"><i class="fa fa-shopping-cart fa-fw"></i>Bestel</a>
+			<a class="btn btn-primary" type="button" ng-really-message= "Wil je een {{cocktail.name | lowercase}} bestellen?" ng-really-click="order(cocktail)"><i class="fa fa-shopping-cart fa-fw"></i>Bestel</a>
 			<a class="btn btn-primary" type="button" ng-href="#/cocktail/{{cocktail.name}}"><i class="fa fa-angle-double-right fa-fw"></i>Details</a>
 		</div>
 </div>
