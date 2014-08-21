@@ -12,7 +12,7 @@ app.factory('cocktailService', function() {
 		],
 		recipe: "Pureer met een cocktailstamper de limoen samen met de suiker in een whiskyglas dat u eerst heeft voorzien van een randje suiker. Vul het glas met ijsgruis en vul aan met wodka.",
 		imageUrl: "/img/cocktails/caprioska.jpg",
-		timesOrdered: 3
+		timesOrdered: 0
 	}, {
 		number: 9,
 		name: "Wodka Martini",
@@ -25,7 +25,7 @@ app.factory('cocktailService', function() {
 		],
 		recipe: "Shenk zo veel vermout in een met ijs gevulde shaker dat het ijs ermee is bedekt. Schenk alle vermout eruit door de zeef. Schenk de wodka in de shaker. Roer een paar seconden om de wodka koud te maken. Giet hem dan door de zeef in een gekoeld glas. Garneer met een sliertje citroenschil en eventueel een olijf. Koel, indien mogelijk, de wodka van tevoren, zodat het doorroeren van de alcohol zo weinig mogelijk effect heeft.",
 		imageUrl: "/img/cocktails/wodka-martini.jpg",
-		timesOrdered: 2
+		timesOrdered: 0
 	}, {
 		number: 23,
 		name: "Cosmopolitan",
@@ -40,7 +40,7 @@ app.factory('cocktailService', function() {
 		],
 		recipe: "Schud alle ingrediënten samen met ijs in de shaker en schenk het mengsel door de zeef in het glas. Garneer met een stukje geflambeerde sinaasappelschil. Houd het sliertje tussen duim en wijsvinger boven het glas en verhit het voorzichtig met een aansteker. Gebruik hiervoor biologische sinaasappelen zoder waslaagje. Knijp in de schil terwijl u hem verhit, zodat de geurige oliën uit de schil in het glas komen. Laat het stukje schil in het glas vallen.",
 		imageUrl: "/img/cocktails/cosmopolitan.jpg",
-		timesOrdered: 5
+		timesOrdered: 0
 	}, {
 		number: 29,
 		name: "Cappuccino Cocktail",
@@ -56,7 +56,7 @@ app.factory('cocktailService', function() {
 		],
 		recipe: "Schenk alle ingrediënten in een shaker, schud en schenk het mengsel door de zeef in een martiniglas. Strooi er een beetje cacaopoeder of chocoladevlokken over voor de garnering.",
 		imageUrl: "/img/cocktails/cappuccino-cocktail.jpg",
-		timesOrdered: 1
+		timesOrdered: 0
 	}, {
 		number: 40,
 		name: "Long Island Iced Tea",
@@ -74,7 +74,7 @@ app.factory('cocktailService', function() {
 		],
 		recipe: "Schud alle ingrediënten (behalve de cola) samen met ijs in een shaker en schenk het mengsel door de zeef in een met ijs gevuld glas. Voeg een scheutje cola toe voor de kleur en leg een schijfje citroen in het glat voor de garnering.",
 		imageUrl: "/img/cocktails/long-island-iced-tea.jpg",
-		timesOrdered: 2
+		timesOrdered: 0
 	}, {
 		number: 50,
 		name: "Delmonico",
