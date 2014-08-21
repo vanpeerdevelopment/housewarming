@@ -15,6 +15,10 @@ app.config(function($routeProvider) {
 				}
 			}
 		})
+		.when('/search', {
+			controller: 'SearchController',
+			templateUrl: '/app/partials/search.html'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
