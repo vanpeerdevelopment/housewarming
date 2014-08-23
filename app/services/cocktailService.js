@@ -191,7 +191,7 @@ app.factory('cocktailService', function() {
 			"1 tl sinaasappelsap",
 			"1 tl frambozenpuree"
 		],
-		recipe: "Pureer het fruit met de cocktailstamper in een shaker. Schenk de rest van de ingrediënten erbij, voeg ijs toe en schud krachtig. Schenk het mengsel door de zeef in het gals. Garneer met 2-3 frambozen.",
+		recipe: "Pureer het fruit met de cocktailstamper in een shaker. Schenk de rest van de ingrediënten erbij, voeg ijs toe en schud krachtig. Schenk het mengsel door de zeef in het glas. Garneer met 2-3 frambozen.",
 		imageUrl: "/img/cocktails/raspberry-delight.jpg",
 		timesOrdered: 0
 	}, {
@@ -399,7 +399,7 @@ app.factory('cocktailService', function() {
 			"20 ml wodka",
 			"scheutje melk of room"
 		],
-		recipe: "Schenk alle ingrediënten in een met ijs gevuld flas. Strooi er gemalen koffie of gekneusde hazelnoten over voor de garnering.",
+		recipe: "Schenk alle ingrediënten in een met ijs gevuld glas. Strooi er gemalen koffie of gekneusde hazelnoten over voor de garnering.",
 		imageUrl: "/img/cocktails/hazel-cream.jpg",
 		timesOrdered: 0
 	}, {
