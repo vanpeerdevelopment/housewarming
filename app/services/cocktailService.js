@@ -313,6 +313,21 @@ app.factory('cocktailService', function() {
 		imageUrl: "/img/cocktails/manhattan.jpg",
 		timesOrdered: 0
 	}, {
+		number: "/",
+		name: "Bertopolitan",
+		keyIngredient: "Whiskey",
+		alcoholLevel: 3,
+		rating: 4,
+		ingredients: [
+			"55 ml whiskey naar keuze",
+			"30 ml triple sec",
+			"55 ml sinaasappelsap",
+			"scheutje limoensap"
+		],
+		recipe: "Schud alle ingrediënten samen met ijs in de shaker en schenk het mengsel door de zeef in het glas. Garneer met een stukje geflambeerde sinaasappelschil. Houd het sliertje tussen duim en wijsvinger boven het glas en verhit het voorzichtig met een aansteker. Gebruik hiervoor biologische sinaasappelen zoder waslaagje. Knijp in de schil terwijl u hem verhit, zodat de geurige oliën uit de schil in het glas komen. Laat het stukje schil in het glas vallen.",
+		imageUrl: "",
+		timesOrdered: 0
+	}, {
 		number: 262,
 		name: "Brandy Daisy",
 		keyIngredient: "Cognac",
@@ -452,7 +467,7 @@ app.factory('cocktailService', function() {
 		}
 	};
 
-	var isOrdered = function(cocktail){
+	var isOrdered = function(cocktail) {
 		return cocktail.timesOrdered > 0;
 	}
 
@@ -469,15 +484,15 @@ app.factory('cocktailService', function() {
 		findNext: function(cocktail) {
 			return cocktails[cocktails.indexOf(cocktail) + 1];
 		},
-		order: function(cocktail){
+		order: function(cocktail) {
 			cocktail.timesOrdered = cocktail.timesOrdered + 1;
 		},
-		orderedCocktails: function(){
+		orderedCocktails: function() {
 			return cocktails
 				.filter(isOrdered);
 		},
-		clearOrder: function(){
-			cocktails.forEach(function(cocktail){
+		clearOrder: function() {
+			cocktails.forEach(function(cocktail) {
 				cocktail.timesOrdered = 0;
 			});
 		}
